@@ -1,0 +1,13 @@
+---
+layout: default
+title: Sabarasaba's blog 
+---
+
+<ul id="posts">
+  {% for post in site.posts %}
+    <li>
+      <a class="nine columns offset-by-four" href="{{ post.url }}">{{ post.title }}</a>
+      <span class="three columns">{{ post.date | date_to_string }}</span>
+    </li>
+  {% endfor %}
+</ul>
