@@ -1,4 +1,4 @@
-# Sirupsen.com
+# sabarasaba.github.com
 
 My website, including my blog as well as my blog posts. [Jekyll](http://github.com/mojombo/jekyll) is awesome!
 
