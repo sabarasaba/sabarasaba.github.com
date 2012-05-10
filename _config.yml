@@ -1,5 +1,0 @@
-pygments: true
-permalink: '/:title'
-markdown: rdiscount
-rdiscount:
-  extensions: [smart]

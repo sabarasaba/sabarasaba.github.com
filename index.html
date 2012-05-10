@@ -1,13 +1,123 @@
----
-layout: default
-title: Sabarasaba's blog 
----
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Sabarasaba's Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="The online portfolio of Ignacio Rivas, a software developer living in Argentina." />
+        <meta name="keywords" content="ignacio, rivas, portfolio, software, developer, .net, c#, c-sharp, coding, opensource, sabarasaba, iarivas, rivasign, argentina" />
+        <meta name="author" content="Ignacio A. Rivas" />
+        <link rel="shortcut icon" href="http://dl.dropbox.com/u/8474936/favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="js/modernizr.custom.29473.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat|Sail|Concert+One' rel='stylesheet' type='text/css' />
+    </head>
+    <body>
+    	<a href="https://github.com/sabarasaba">
+    		<img style="position: absolute; top: 0; right: 0; border: 0; z-index: 20;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub" />
+    	</a>
+        <div class="container">
+			<header>
+				<h2>Hi, i'm</h2>
+				<h1 id="headline">Sabarasaba</h1>
+				<h2>and this is my portfolio</h2>
+				<p class="box-filter">
+					<a href="#" class="current-filter">All</a>
+					<a href="#">Projects</a>
+					<a href="#">Contributions</a>
+					<a href="#">Gists</a>
+					<a href="#">Posts</a>
+				</p>
+			</header>
+			<section class="sub" id="sub1">
+				<input id="select-type-all" name="radio-set-1" type="radio" class="box-selector-type-all" checked="checked" />
+				<input id="select-type-1" name="radio-set-1" type="radio" class="box-selector-type-1" />
+				<input id="select-type-2" name="radio-set-1" type="radio" class="box-selector-type-2" />
+				<input id="select-type-3" name="radio-set-1" type="radio" class="box-selector-type-3" />
+				<input id="select-type-3" name="radio-set-1" type="radio" class="box-selector-type-4" />
 
-<ul id="posts">
-  {% for post in site.posts %}
-    <li>
-      <a class="nine columns offset-by-four" href="{{ post.url }}">{{ post.title }}</a>
-      <span class="three columns">{{ post.date | date_to_string }}</span>
-    </li>
-  {% endfor %}
-</ul>
+				<ul class="box-items">
+					<li class="box-item-type-1">
+						<a href="https://github.com/sabarasaba/PlaylistFM">
+							<span>Playlist.FM</span>
+							<img src="images/playlistfm.png" />
+						</a>
+					</li>
+					<li class="box-item-type-4">
+						<a href="#">
+							<span>Creating an RSS feed with rails</span>
+							<img src="images/7.jpg" />
+						</a>
+					</li>
+					<li class="box-item-type-3">
+						<a href="https://gist.github.com/1387550">
+							<span>Setting a timeout for the file_get_contents function in php</span>
+							<img src="images/php-filegetcontent-gist.png" />
+						</a>
+					</li>
+					<li class="box-item-type-2">
+						<a href="https://github.com/karmacracy/KarmicGraphs">
+							<span>KarmicGraphs</span>
+							<img src="images/karmicgraph.png" />
+						</a>
+					</li>
+					<li class="box-item-type-3">
+						<a href="https://gist.github.com/1361520">
+							<span>Delete duplicates from a mysql table</span>
+							<img src="images/mysql-duplicates-gist.png" />
+						</a>
+					</li>
+					<li class="box-item-type-4">
+						<a href="#">
+							<span>About C# and lambda expressions</span>
+							<img src="images/3.jpg" />
+						</a>
+					</li>
+					<li class="box-item-type-4">
+						<a href="#">
+							<span>A multithread point of view on workers</span>
+							<img src="images/5.jpg" />
+						</a>
+					</li>
+					<li class="box-item-type-3">
+						<a href="https://gist.github.com/1362220">
+							<span>Get first url video from youtube with php</span>
+							<img src="images/php-geturlvideo-gist.png" />
+						</a>
+					</li>
+					<li class="box-item-type-4">
+						<a href="#">
+							<span>My current desktop enviroment</span>
+							<img src="images/8.jpg" />
+						</a>
+					</li>
+				</ul>
+				<div class="clr"></div>
+			</section>
+			<section class="sub-end" id="sub2">
+				<div class="example">
+					My name is Ignacio Rivas, I'm a full time software developer and system engineering student. In my spare time I enjoy reading books, watching movies/tv shows and playing the flute.
+				</div>
+				<div class="code">
+					<h4>I'd love to hear something from you</h4>
+					<p>You can find me in</p>
+					<code>
+						<a href="https://twitter.com/#!/sabarasaba"><img src="images/social/twitter.png" class="social-icon"/></a>
+						<a href="skype:rivasign?call"><img src="images/social/skype.png" class="social-icon"/></a>
+						<a href="http://www.linkedin.com/in/rivasignacio"><img src="images/social/linkedin.png" class="social-icon"/></a>
+						<a href="http://www.facebook.com/RivasIgnacio"><img src="images/social/facebook.png" class="social-icon"/></a>
+						<a href="http://sabarasaba.tumblr.com/"><img src="images/social/tumblr.png" class="social-icon"/></a>
+						<a href="http://www.youtube.com/user/iTrekky"><img src="images/social/youtube.png" class="social-icon"/></a>
+						<a href="http://www.reddit.com/user/fuck-yeah-guy/"><img src="images/social/reddit.png" class="social-icon"/></a>
+						<a href="http://www.lastfm.es/user/IARivas"><img src="images/social/lastfm.png" class="social-icon"/></a>
+					</code>
+				</div>
+			</section>
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.arctext.js"></script>
+		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
