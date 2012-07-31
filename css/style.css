@@ -108,7 +108,7 @@ section{
 	padding-bottom: 50px;
 }
 .sub{
-	padding: 20px 0px;
+	padding: 20px 5% 5% 5%;
 }
 .example, .code{
 	width: 40%;
@@ -136,9 +136,15 @@ code{
 	background: rgba(0, 0, 0, 0.1);
 	clear: both;
 	position: relative;
+	text-align:center;
 	display: block;
 	margin-top: 10px;
 	border-radius: 10px;
+}
+code a{
+	display:inline-block;
+	margin-left:auto;
+	margin-right:auto;
 }
 .buttons{
 	width: 495px;
