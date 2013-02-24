@@ -1,6 +1,8 @@
 $(document).ready(function(){
 
-	$('.box-filter a').click(function(){
+	$('.box-filter a').click(function(e){
+		e.preventDefault();
+		
 		var demo = $(this).text();
 		$('a, .box-filter *').removeClass('current-filter');
 		$(this).addClass('current-filter');
