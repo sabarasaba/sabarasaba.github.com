@@ -1,5 +1,5 @@
 /* CSS reset */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
 	margin:0;
 	padding:0;
 }
@@ -12,7 +12,7 @@ table {
 	border-collapse:collapse;
 	border-spacing:0;
 }
-fieldset,img { 
+fieldset,img {
 	border:0;
 }
 address,caption,cite,code,dfn,th,var {
@@ -52,8 +52,6 @@ a{
 }
 .container{
 	width: 100%;
-	padding-bottom: 40px;
-	min-width: 590px;
 	position: relative;
 	text-align: center;
 }
@@ -61,7 +59,7 @@ a{
 	clear: both;
 }
 .container > header{
-	padding: 20px;
+	padding-top: 20px;
 	margin: 0px 20px 20px 20px;
 	position: relative;
 	display: block;
@@ -79,7 +77,7 @@ a{
 	color: #D26A44;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.1), 0 0 1px #D26A44;
     padding: 0px 0px 60px 0px;
-	
+
 }
 .container > header h1 span:nth-child(4),
 .container > header h1 span:nth-child(5),
@@ -238,7 +236,7 @@ p.box-filter a.current-filter:hover{
 	display: none;
 }
 .box-items{
-	position: relative;
+	width: 90%;
 	margin: 0px auto;
 	padding-top: 20px;
 }
@@ -327,8 +325,49 @@ p.box-filter a.current-filter:hover{
 
 	overflow:hidden;
 }
-.social-icon:hover{ 
+.social-icon:hover{
 	-webkit-transform:rotate(360deg);
-	-moz-transform:rotate(360deg); 
+	-moz-transform:rotate(360deg);
 	-o-transform:rotate(360deg);
 }
+
+
+
+
+@media (max-width: 700px){
+	.container > header h1 {
+		font-size: 40px;
+		line-height: 77px;
+	}
+
+	.code h4{
+		font-size: 20px;
+	}
+
+	.code img {
+		margin-right: 0;
+	}
+
+	.box-items li img {
+		width: 100%;
+	}
+
+	.box-items a span {
+		width: 81%;
+	}
+
+	.box-items a {
+		width: auto;
+		height: auto;
+	}
+
+	.box-items li {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+
+
+
+
