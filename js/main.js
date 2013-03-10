@@ -2,14 +2,14 @@ $(function(){
 
   // --- Active Nav --- //
 
-  var url = window.location.pathname,
-      urlRegExp = new RegExp(url == '/' ? window.location.origin + '/?$' : url.replace(/\/$/,''));
+  // var url = window.location.pathname,
+  //     urlRegExp = new RegExp(url == '/' ? window.location.origin + '/?$' : url.replace(/\/$/,''));
 
-  $('#pagenav a').each(function(){
-      if(urlRegExp.test(this.href.replace(/\/$/,''))){
-          $(this).addClass('active');
-      }
-  });
+  // $('#pagenav a').each(function(){
+  //     if(urlRegExp.test(this.href.replace(/\/$/,''))){
+  //         $(this).addClass('active');
+  //     }
+  // });
 
   // --- Markdown Footnotes --- //
 
