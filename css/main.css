@@ -211,7 +211,6 @@ h1.sitetitle, h2.sitetitle {
 .sitetitle {
   font-size: 36px;
   font-family: 'ChunkFive', Helvetica, sans-serif;
-  text-transform: lowercase;
   font-weight: 100;
   display: block;
   border: none;
@@ -263,15 +262,24 @@ ul#pagenav, .sitetitle {
 }
 
 .about{
+	font-family:  "open sans", sans-serif;
+	font-weight: 500;
   color: rgba(255, 255, 255, 0.7);
   text-transform: none;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 0;
 }
 
 
 ul.posts{
   list-style-type: none;
+  padding: 0;
+	padding-left: 40px;
+	margin: 0;
+}
+
+.content h2{
+	padding-left: 40px;
 }
 
 ul.posts li{
@@ -284,6 +292,22 @@ ul.posts span{
   color: #aaa;
   padding-right: 5px;
   font-size: 14px;
+}
+
+.top-margin{
+	margin-top: 40px !important;
+}
+
+.top-margin-projects{
+	margin-top: 20px !important;
+}
+
+.project-date{
+	color: #aaa !important;
+	font-family: Monaco, "Courier New", monospace;
+	font-size: 80%;
+	margin: 0;
+	font-weight: normal;
 }
 
 /* Mobile */
