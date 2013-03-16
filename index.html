@@ -28,68 +28,61 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/normalize.css" type="text/css" />
   <link rel="stylesheet" href="css/main.css" type="text/css" />
-
 </head>
-<body class="home">
+<body>
 
-  <div id="masthead">
+  <nav class="sidebar">
+    <a href="/">
+      <img src="images/me.jpg" alt="Just a picture of me!" class="image-author" />
+    </a>
+    <h1 class="sitetitle">
+      <a href="/" class="sitetitle">Ignacio Rivas</a>
+    </h1>
+    <p class="description">Front-end Developer</p>
 
-  <a href="/">
-    <img id="zeno-illustration" src="images/zeno-html5.png" alt="Zeno Rocha's Illustration" />
-  </a>
-
-  <h1 class="sitetitle">
-    <a href="/" class="sitetitle">Ignacio Rivas</a>
-  </h1>
-  <p class="description">Front-end Developer</p>
-
-  <ul id="pagenav">
-    <li><a href="#">Blog</a></li>
-    <li><a href="https://github.com/sabarasaba?tab=repositories">Projects</a></li>
-  </ul>
-
-</div> <!--/masthead-->
-
-  <div class="container">
-
-    <div id="content">
-
-
-
-    <p>Hi, I&#8217;m <em>Ignacio</em>. I am a 23 year old front-end developer who lives in <em>Argentina</em> and works for an awesome company located in the awful city of <em>Tandil</em> :)</p>
-
-    <p>I used to work as a <strong>software developer</strong> at <a href='#fn:1' rel='footnote'>Q4-Tech</a><sup id='fnref:1'><a href='#fn:1' rel='footnote'>1</a></sup> and <a href='#fn:2' rel='footnote'>GIE</a><sup id='fnref:2'><a href='#fn:2' rel='footnote'>2</a></sup>. Now I&#8217;m working at <a href='#fn:3' rel='footnote'>Globant</a><sup id='fnref:3'><a href='#fn:3' rel='footnote'>3</a></sup> as a front-end developer and working on a open source project called <a href='#fn:4' rel='footnote'>Tookie</a><sup id='fnref:4'><a href='#fn:4' rel='footnote'>4</a></sup>.</p>
-
-    <div class='footnotes'>
-      <hr />
-      <ol>
-        <li id='fn:1'>
-          <p><strong>Q4-Tech</strong> is an Argentinian based company that develops and delivers mobile software for field forces. &#8212; <a href='http://www.q4tech.com/home.htm'>Website</a> | <a href='https://twitter.com/q4tech'>Twitter</a> | <a href='https://www.facebook.com/pages/Q4Tech-Argentina/'>Facebook</a></p>
-          <a href='#fnref:1' rev='footnote'>&#8617;</a>
-        </li>
-        <li id='fn:2'>
-          <p><strong>GIE S.A.</strong> is a company dedicated to the integrity of Oil and Gas facilities. &#8212; <a href='http://www.giemdp.com.ar/'>Website</a> | <a href='https://www.facebook.com/pages/GIE-SA/'>Facebook</a></p>
-          <a href='#fnref:2' rev='footnote'>&#8617;</a>
-        </li>
-        <li id='fn:3'>
-          <p><strong>Globant</strong> is one of the biggest Argentine companies, Im currently working in the Creative &amp; Social Studio, creating kick-ass web applications. &#8212; <a href='http://www.globant.com/'>Website</a> | <a href='https://twitter.com/Globant'>Twitter</a> | <a href='https://www.facebook.com/Globant'>Facebook</a></p>
-          <a href='#fnref:3' rev='footnote'>&#8617;</a>
-        </li>
-        <li id='fn:4'>
-          <p><strong>Tookie</strong> is an open-source meta-search engine that indexes movie torrents and presents all the information in a beautiful UI.  &#8212; <a href='http://tookie.jit.su/'>Website</a> | <a href='https://github.com/sabarasaba/Tookie/'>GitHub</a></p>
-          <a href='#fnref:4' rev='footnote'>&#8617;</a>
-        </li>
-      </ol>
+    <div class="description about">
+      <p>I'm a Web Developer from Argentina and I ship code at Globant.</p>
     </div>
+
+    <ul id="pagenav">
+      <li><a href="#">Blog</a></li>
+      <li><a href="https://github.com/sabarasaba?tab=repositories">Projects</a></li>
+    </ul>
+  </nav> <!--/masthead-->
+
+<div class="container">
+  <div id="content">
+      <ul class="posts">
+        <li><span>28 Jan 2013 &raquo;</span><a href="/blog/2013/01/28/evaluating-technical-arguments.html">Evaluating Technical Arguments</a></li>
+
+        <li><span>20 Jan 2013 &raquo;</span><a href="/blog/2013/01/20/worst-bug-ever.html">Worst. Bug. Ever.</a></li>
+
+        <li><span>01 Jan 2013 &raquo;</span><a href="/blog/2013/01/01/year-in-review-2012.html">My Year in Review: 2012</a></li>
+
+        <li><span>17 Dec 2012 &raquo;</span><a href="/blog/2012/12/17/habit-ramp-up.html">Habit Ramp Up</a></li>
+
+        <li><span>10 Dec 2012 &raquo;</span><a href="/blog/2012/12/10/personal-time-capsule.html">Personal Time Capsule</a></li>
+
+        <li><span>18 Nov 2012 &raquo;</span><a href="/blog/2012/11/18/motion-is-not-progress.html">Motion is not Progress</a></li>
+
+        <li><span>06 Nov 2012 &raquo;</span><a href="/blog/2012/11/06/the-optimistic-programmer.html">The Optimistic Programmer</a></li>
+
+        <li><span>04 Nov 2012 &raquo;</span><a href="/blog/2012/11/04/code-reviews-good-idea-bad-idea.html">Code Reviews: Good idea, bad idea?</a></li>
+
+        <li><span>28 Oct 2012 &raquo;</span><a href="/blog/2012/10/28/i-dont-have-time.html">I Don't Have Time</a></li>
+
+        <li><span>25 Sep 2012 &raquo;</span><a href="/blog/2012/09/25/new-coke-ux.html">New Coke User Experience</a></li>
+
+        <li><span>27 Aug 2012 &raquo;</span><a href="/blog/2012/08/27/move-your-feet.html">Move your feet</a></li>
+
+        <li><span>31 May 2012 &raquo;</span><a href="/blog/2012/05/31/primitive-obsession.html">A Dangerous Obsession with Primitives</a></li>
+
+        <li><span>22 Mar 2012 &raquo;</span><a href="/blog/2012/03/22/test-first-as-system-2-thinking.html">Test First as System 2 Thinking</a></li>
+
+        <li><span>01 Mar 2012 &raquo;</span><a href="/blog/2012/03/01/my-side-project-queue.html">What's in my Side Project Queue?</a></li>
+      </ul>
   </div>
 </div>
-
-<ul class="social-links">
-  <li><a class="social-twitter" target="_blank" href="http://twitter.com/sabarasaba">Twitter</a></li>
-  <li><a class="social-facebook" target="_blank" href="https://www.facebook.com/RivasIgnacio">Facebook</a></li>
-  <li><a class="social-github" target="_blank" href="https://github.com/sabarasaba">Github</a></li>
-  <li><a class="social-email" target="_blank" href="mailto:rivasign@gmail.com">Email</a></li>
-</ul>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -103,7 +96,7 @@
   })();
 </script>
 
-<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
 <script src='js/main.js'></script>
 <script src='js/modernizr_css_classes.js'></script>
 <script type='text/javascript' src='js/fokus.min.js'></script>
