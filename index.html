@@ -1,122 +1,20 @@
-<!doctype html>
-<html lang="en">
-<head>
+---
+layout: default
+---
 
-  <title> Ignacio Rivas</title>
-
-  <!-- Meta -->
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="A front-end developer who lives in the awful city of Tandil, Argentina." />
-  <meta name="keywords" content="ignacio, rivas, portfolio, software, developer, .net, c#, c-sharp, coding, opensource, sabarasaba, iarivas, rivasign, argentina" />
-  <meta name="author" content="Ignacio A. Rivas" />
-
-  <!-- Facebook -->
-  <meta property="og:title" content=" Ignacio Rivas"/>
-  <meta property="og:site_name" content="Ignacio Rivas"/>
-  <meta property="og:url" content="http://sabarasaba.github.com/"/>
-  <meta property="og:image" content="images/fb-share.jpg"/>
-  <meta property="og:type" content="blog"/>
-  <meta property="og:description" content="A front-end developer who lives in the awful city of Tandil, Argentina."/>
-
-  <link rel="shortcut icon" href="http://sabarasaba.github.com/favicon.ico" type="image/x-icon" />
-
-  <!-- Font -->
-  <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/font-awesome.min.css" />
-  <!--[if IE 7]>
-    <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
-  <![endif]-->
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/normalize.css" type="text/css" />
-  <link rel="stylesheet" href="css/main.css" type="text/css" />
-</head>
-<body>
-
-  <nav class="sidebar">
-    <a href="/">
-      <img src="images/me.jpg" alt="Just a picture of me!" class="image-author" />
-    </a>
-    <h1 class="sitetitle">
-      <a href="/" class="sitetitle">Ignacio Rivas</a>
-    </h1>
-    <p class="description">Front-end Developer</p>
-
-    <div class="description about">
-      <p>I'm a Web Developer from Argentina and I ship code at Globant.</p>
-    </div>
-
-<!--     <ul id="pagenav">
-      <li><a href="#container-posts">Blog</a></li>
-      <li><a href="#container-projects">Projects</a></li>
-    </ul>
- -->  </nav>
-
-<section class="posts">
-  <div class="content">
-      <h2 id="container-posts"><i class="icon-bookmark"></i> Blog Posts</h2>
-      <ul class="posts">
-        <li><span>28 Jan 2013 &raquo;</span><a href="#">Lorem ipsum dolor sit amet.</a></li>
-
-        <li><span>20 Jan 2013 &raquo;</span><a href="#">Lorem ipsum dolor sit amet.</a></li>
-
-        <li><span>01 Jan 2013 &raquo;</span><a href="#">Lorem ipsum dolor sit amet.</a></li>
-
-        <li><span>17 Dec 2012 &raquo;</span><a href="#">Lorem ipsum dolor sit amet.</a></li>
-
-        <li><span>10 Dec 2012 &raquo;</span><a href="#">Lorem ipsum dolor sit amet.</a></li>
-
-        <li><span>18 Nov 2012 &raquo;</span><a href="#">Lorem ipsum dolor sit amet.</a></li>
-
-        <li><span>06 Nov 2012 &raquo;</span><a href="#">Lorem ipsum dolor sit amet.</a></li>
-
-        <li><span>04 Nov 2012 &raquo;</span><a href="#">Lorem ipsum dolor sit amet.</a></li>
-
-        <li><span>28 Oct 2012 &raquo;</span><a href="#">Lorem ipsum dolor sit amet.</a></li>
-
-        <li><span>25 Sep 2012 &raquo;</span><a href="#">Lorem ipsum dolor sit amet.</a></li>
-
-        <li><span>27 Aug 2012 &raquo;</span><a href="#">Lorem ipsum dolor sit amet.</a></li>
-
-        <li><span>31 May 2012 &raquo;</span><a href="#">Lorem ipsum dolor sit amet.</a></li>
-
-        <li><span>22 Mar 2012 &raquo;</span><a href="#">Lorem ipsum dolor sit amet.</a></li>
-
-        <li><span>01 Mar 2012 &raquo;</span><a href="#">Lorem ipsum dolor sit amet.</a></li>
-      </ul>
-
-      <h2 id="container-projects" class="top-margin"><i class="icon-beaker"></i> Projects</h2>
-      <h2 class="project-date">2013 »</h2>
-      <ul class="posts">
-        <li><a target="_blank" href="https://github.com/sabarasaba/Tookie">Tookie:</a> Meta-search engine for torrent movies.</li>
-        <li><a target="_blank" href="https://github.com/globant-ui/arialinter">AriaLinter:</a> Rule based accessibility linter for HTML documents</li>
-        <li><a target="_blank" href="#">HeadScroll:</a> Scroll webpages using your head</li>
-        <li><a target="_blank" href="https://github.com/sabarasaba/jquery-slidecheck">jQuery-SlideCheck:</a> Checkbox with drag n drop support</li>
-      </ul>
-
-      <h2 class="project-date top-margin-projects">2012 »</h2>
-      <ul class="posts">
-        <li><a target="_blank" href="https://github.com/sabarasaba/PlaylistFM">PlaylistFM:</a> Generate a playlist of the top songs of your favourite artists</li>
-      </ul>
-  </div>
-</section>
-
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-32825709-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-
-<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
-<script src='js/main.js'></script>
-<script src='js/modernizr_css_classes.js'></script>
-
-</body>
-</html>
+{% assign index = true %}
+<div itemscope itemtype="http://schema.org/Blog">
+{% for post in paginator.posts %}
+{% assign content = post.content %}
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">{% include article.html %}</article>
+{% endfor %}
+</div>
+<nav id="pagenavi">
+    {% if paginator.previous_page %}
+        <a href="{{paginator.previous_page}}" class="prev">Prev</a>
+    {% endif %}
+    {% if paginator.next_page %}
+        <a href="{{paginator.next_page}}" class="next">Next</a>
+    {% endif %}
+    <div class="center"><a href="{{ root_url }}/blog/archives">Blog Archives</a></div>
+</nav>
