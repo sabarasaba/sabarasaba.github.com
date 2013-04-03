@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Ignacio Rivas]]></title>
+  <link href="http://sabarasaba.github.com/atom.xml" rel="self"/>
+  <link href="http://sabarasaba.github.com/"/>
+  <updated>2013-04-03T20:40:32-03:00</updated>
+  <id>http://sabarasaba.github.com/</id>
+  <author>
+    <name><![CDATA[Ignacio Rivas]]></name>
+    <email><![CDATA[rivasign@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[hello world]]></title>
+    <link href="http://sabarasaba.github.com/blog/2013/04/03/hello-world/"/>
+    <updated>2013-04-03T17:15:00-03:00</updated>
+    <id>http://sabarasaba.github.com/blog/2013/04/03/hello-world</id>
+    <content type="html"><![CDATA[<p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, non, nemo officiis optio cupiditate nesciunt ex qui accusantium vitae fugiat impedit eum voluptatem nisi saepe consequatur perspiciatis ab velit eligendi dolore vero tenetur at ratione facere sapiente inventore quo tempora repellat libero beatae odit placeat ipsam temporibus laudantium aliquam laboriosam!
+</p>
+
+]]></content>
+  </entry>
+  
+</feed>
