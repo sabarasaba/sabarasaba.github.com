@@ -11,7 +11,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>sabarasaba</title>
+	<title>About</title>
 
 	<!-- SEO -->
 
@@ -34,7 +34,9 @@
 
 	<!-- Favicons -->
 
-	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png">
 
 	<!-- IE Scripts -->
 
@@ -51,47 +53,36 @@
 
 <body>
 
-	<div class="hero">
-	<header>
+	<header  class="flat">
 		<div class="wrap">
+			<a href="index.html" class="mark"><h1>sabar<span>asaba</span></h1></a>
 
-		<a href="" class="mark"><h1>sabar<span>asaba</span></h1></a>
-
-		<ul class="nav">
-			<li><a class="current" href="index.html#work">&#xe003;</a></li>
-			<li><a href="about.html">&#xe000;</a></li>
-			<li><a href="blog/index.html">&#xe009;</a></li>
-			<li><a class="github" href="http://github.com/sabarasaba">&#62208;</a></li>
-			<li><a href="http://twitter.com/sabarasaba">&#xe001;</a></li>
-		</ul>
-
+			<ul class="nav">
+				<li><a href="index.html">&#xe003;</a></li>
+				<li><a class="current" href="about.html">&#xe000;</a></li>
+				<li><a href="blog/index.html">&#xe009;</a></li>
+				<li><a class="github" href="http://github.com/sabarasaba">&#62208;</a></li>
+				<li><a href="http://twitter.com/sabarasaba">&#xe001;</a></li>
+			</ul>
 		</div>
 	</header>
 
 	<section class="main">
-		<div class="wrap">
+		<div class="wrapper">
 
-		<div class="in">
-			<h1>Hello! I'm Ignacio</h1>
-			<small>a front-end developer from Argentina</small>
-			<a class="cont" href="index.html#work"><span class="btn">Latest Work</span><br />
-			<span class="arrow">&#xe004;</span></a>
-		</div>
+			<h1 class="title"><span>About</span></h1>
 
 		</div>
 	</section>
-	</div>
 
-	<section id="work" class="work">
+	<section class="about">
 		<div class="wrap">
 
-			<div class="item1">
-				<a class="overlay" href="https://github.com/sabarasaba/Tookie" target="_blank"><span class="icon">&#xe008;</span></a>
-			</div>
+			<a class="avatar" href="http://twitter.com/sabarasaba"></a>
 
-			<div class="item2">
-				<a class="overlay" href="https://github.com/globant-ui/arialinter" target="_blank"><span class="icon">&#xe008;</span></a>
-			</div>
+			<p class="text">Hello, my name is Ignacio Rivas, and I'm a front-end developer based in Tandil, Argentina.<br /><br />
+			You can usually find me in front of my Mac, where I’m either writting javascript code, watching some movies, or reading a book.<br /><br />
+			 If you’d like to drop me a line, you can <a href="mailto:rivasign@gmail.com">send me an email</a>, or mention me on <a href="http://twitter.com/sabarasaba">Twitter</a>.<br /><br />You could also find me on <a href="http://www.linkedin.com/in/rivasignacio" target="_blank">Linkedin</a> (if you're into that sort of thing).<br /><br /> Oh yeah, and I also have a <a href="blog/index.html">blog</a>.</p>
 
 		</div>
 	</section>
@@ -111,34 +102,22 @@
 
 	  <!-- Scripts go here. -->
 
-	  <script src="js/jquery.easing.1.3.js"></script>
-
-	  <script type="text/javascript">
-	              $(function() {
-	                  $('ul li a, a').bind('click',function(event){
-	                      var anchor = $(this).attr('href');
-	  	            			var a = anchor.substr(anchor.indexOf('#'), anchor.length);
-
-	                      $('html, body').stop().animate({
-	                          scrollTop: $(a).offset().top -40
-	                      }, 1500,'easeInOutExpo');
-	                      event.preventDefault();
-	                  });
-	              });
-	          </script>
+	  <script src="http://iqonicdesign.com/js/plugins.js"></script>
 
 	  <!-- Google Analytics snippet. Change UA-XXXXX-X to be your site's ID. -->
 
 	  <script>
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-32825709-1']);
-		  _gaq.push(['_trackPageview']);
 
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
+	    var _gaq = _gaq || [];
+	    _gaq.push(['_setAccount', 'UA-28664212-1']);
+	    _gaq.push(['_trackPageview']);
+
+	    (function() {
+	      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	    })();
+
 	  </script>
 
 </body>
@@ -146,3 +125,9 @@
 
 
 </html>
+
+
+
+
+
+
