@@ -12,7 +12,12 @@
  * Date: 2013-2-4
  */
 
-/*!
+/*
+
+ Hey! watcha looking for ? If you wanna take a look at the source code visit https://github.com/sabarasaba/sabarasaba.github.com/tree/master/js
+
+
+ !
  * Sizzle CSS Selector Engine
  * Copyright 2012 jQuery Foundation and other contributors
  * Released under the MIT license
