@@ -1,0 +1,1 @@
+define(["backbone","./projects.model"],function(e,t){var n=e.Collection.extend({model:t,url:"/deploy/site-data/projects.json"});return n});

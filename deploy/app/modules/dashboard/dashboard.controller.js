@@ -1,0 +1,1 @@
+define(["./main/dashboard.manager","app/widgets/projects/projects.widget"],function(e,t){var n={load:function(){var n=new e({el:"body",template:"mainlayout.hbs"});n.addView(".projects-widget",new t({el:".projects-widget"})),n.render()}};return n});

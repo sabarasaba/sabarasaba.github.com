@@ -1,0 +1,5 @@
+// epicFullscreen - version 1.0 - jquery 1.7.1.
+// Copyright - unlimitDesign
+// Sets a background image behind content with opacity, background color, and pattern options.
+
+(function(e){e.fn.epicFullscreen=function(t){function p(){e(window).width()<=767?o=e("#featured").outerHeight():o=e(window).height(),s=e(window).width(),u=o/s,a=i.width(),f=i.height(),l=f/a,u>l?(h=o,c=o/l):(h=s*l,c=s),i.css({width:c+"px",height:h+"px",left:(s-c)/2+"px",top:(o-h)/2+"px"})}var n={opacity:.4,pattern:!0,background:"#ff5400",callback:function(){}},t=e.extend({},n,t),r=e(this),i=e("img.epicImg"),s,o,u,a,f,l,c,h;r.css({backgroundColor:t.background}),i.animate({opacity:t.opacity}),r.append('<div id="epic-loader"></div>'),t.pattern==1&&r.append('<div id="epic-overlay"></div>'),e(window).bind("resize",function(){p()}),i.each(function(){var n=new Image,i=e(this).attr("src");e(n).load(function(){p(),r.css({background:t.background}),t.callback.call(this)}).attr("src",i).error(function(){alert("check image path or connection")})})}})(jQuery);

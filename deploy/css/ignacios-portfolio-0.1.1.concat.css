@@ -1,0 +1,338 @@
+@font-face {
+  font-family: "bariol_regularregular";
+  src: url("/css/fonts/bariol_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Common Rules */
+html, body, .wrapper {
+  font-family: "bariol_regularregular", helvetica nue, arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  height: 100%;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button {
+  border: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  background: #bdc3c7;
+  color: #ffffff;
+  line-height: 22px;
+  text-decoration: none;
+  text-shadow: none;
+
+  width: 250px;
+  font-size: 16.996px;
+  line-height: 20px;
+  padding: 12px 18px 13px;
+
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+
+  -webkit-transition: 0.25s;
+     -moz-transition: 0.25s;
+       -o-transition: 0.25s;
+          transition: 0.25s;
+
+  -webkit-backface-visibility: hidden;
+}
+
+.button-blue {
+  background-color: #3498db;
+}
+
+.button-blue:hover {
+  color: #ffffff;
+  background-color: #5dade2;
+}
+
+.button-fat {
+  width: 200px;
+  padding: 25px 10px 25px;
+}
+
+/* Header section */
+.homepage {
+  position: relative;
+  display: table;
+  background: url(/img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  max-width:100%;
+  max-height:100%;
+}
+
+.homepage .greetings {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+  width: 50%;
+}
+
+.greetings .title h1 {
+  font-weight: normal;
+}
+
+.greetings .subtitle {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.greetings .subtitle a,
+.greetings .subtitle a:visited {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.greetings .subtitle a:hover,
+.greetings .subtitle a:active,
+.greetings .subtitle a:focus {
+  color: #f75246;
+}
+
+
+.greetings .button {
+  text-decoration: none;
+  -webkit-transition-property: color;
+     -moz-transition-property: color;
+       -o-transition-property: color;
+          transition-property: color;
+
+  -webkit-transition-duration: 0.2s;
+     -moz-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+.greetings .button-glow {
+  margin-top: 30px;
+
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  -webkit-transition-property: box-shadow;
+     -moz-transition-property: box-shadow;
+       -o-transition-property: box-shadow;
+          transition-property: box-shadow;
+
+  -webkit-transition-duration: 0.4s;
+     -moz-transition-duration: 0.4s;
+       -o-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+
+  text-shadow: rgba(0,0,0,0.35) 0 -1px 0;
+  background-color: #f9776c;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f9776c), color-stop(100%, #f75246)),#f9776c;
+  background: -webkit-linear-gradient(#f9776c,#f75246),#f9776c;
+  background:    -moz-linear-gradient(#f9776c,#f75246),#f9776c;
+  background:      -o-linear-gradient(#f9776c,#f75246),#f9776c;
+  background:         linear-gradient(#f9776c,#f75246),#f9776c;
+
+  -webkit-box-shadow: inset rgba(255,255,255,0.3) 0 1px 0,inset rgba(0,0,0,0.12) 0 -1px 0,rgba(0,0,0,0.3) 0 1px 2px;
+     -moz-box-shadow: inset rgba(255,255,255,0.3) 0 1px 0,inset rgba(0,0,0,0.12) 0 -1px 0,rgba(0,0,0,0.3) 0 1px 2px;
+          box-shadow: inset rgba(255,255,255,0.3) 0 1px 0,inset rgba(0,0,0,0.12) 0 -1px 0,rgba(0,0,0,0.3) 0 1px 2px;
+}
+
+.greetings .button-glow:hover {
+  -webkit-box-shadow: inset rgba(255,255,255,0.3) 0 1px 0,inset rgba(0,0,0,0.12) 0 -1px 0,rgba(0,0,0,0.3) 0 1px 2px,#f86960 0 1px 30px;
+     -moz-box-shadow: inset rgba(255,255,255,0.3) 0 1px 0,inset rgba(0,0,0,0.12) 0 -1px 0,rgba(0,0,0,0.3) 0 1px 2px,#f86960 0 1px 30px;
+          box-shadow: inset rgba(255,255,255,0.3) 0 1px 0,inset rgba(0,0,0,0.12) 0 -1px 0,rgba(0,0,0,0.3) 0 1px 2px,#f86960 0 1px 30px;
+}
+
+
+.greetings img {
+  width: 140px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+}
+
+
+/* Followme section */
+
+.followme {
+  height: 200px;
+  color: #b3bac2;
+  background-color: #39414c;
+}
+
+.followme .tweet-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.followme .tweet-container .tweet-message {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.followme .tweet-container .tweet-message a{
+  padding-right: 5px;
+  color: #9299a3;
+}
+
+.followme .tweet-button {
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+/* Footer section */
+
+.footer {
+  text-align: center;
+  font-size: 16px;
+  height: 100px;
+  color: #70797D;
+}
+
+.footer a, .footer a:visited {
+  color: #70797D;
+}
+
+.footer > div {
+  margin-top: 50px;
+}
+
+.footer .social-icons {
+  margin-top: 47px !important;
+}
+
+.footer i {
+  font-size: 30px
+}
+
+/* Media querys */
+@media screen and (max-width: 970px) {
+  .button {
+    padding: 13px 13px 13px;
+  }
+}
+.projects-widget {
+  background-color: #ffffff;
+}
+
+.projects-container {
+  padding: 40px 0 40px 0;
+}
+
+/* Responsive grid */
+
+.grid {
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+}
+
+.grid li {
+  display: inline-block;
+  margin: 0;
+  padding: 20px;
+  text-align: left;
+  position: relative;
+}
+
+.grid figure {
+  margin: 0;
+  position: relative;
+}
+
+.grid figure img {
+  max-width: 100%;
+  display: block;
+  position: relative;
+}
+
+.grid figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #2c3f52;
+  color: #f9776c;
+}
+
+.grid figcaption h3 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.grid figcaption a {
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 2px;
+  display: inline-block;
+  background: #f75246;
+  color: #fff;
+}
+
+.grid-effect figcaption {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+          backface-visibility: hidden;
+
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+     -moz-transition:    -moz-transform 0.3s, opacity 0.3s;
+          transition:         transform 0.3s, opacity 0.3s;
+}
+
+.grid-effect figure:hover figcaption{
+  opacity: 1;
+
+  -webkit-transform: translate(15px, 15px);
+     -moz-transform: translate(15px, 15px);
+      -ms-transform: translate(15px, 15px);
+          transform: translate(15px, 15px);
+}
+
+.grid-effect figcaption h3 {
+  margin-top: 30px;
+}
+
+.grid-effect figcaption span {
+  display: block;
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10px
+}
+
+.grid-effect figcaption span p {
+  margin: 0;
+}
+
+.grid-effect figcaption a {
+  margin-top: 15px;
+}
+
+/* Media querys */
+@media screen and (max-width: 1070px) {
+  .grid li {
+    padding: 20px 0 20px 0;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .grid li {
+    padding: 20px 0 20px 0;
+  }
+}

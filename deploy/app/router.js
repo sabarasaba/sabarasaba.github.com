@@ -1,0 +1,1 @@
+define(["backbone","./modules/dashboard/dashboard.controller"],function(e,t){var n=e.Router.extend({routes:{"*path":"defaultAction"},initialize:function(){e.history.start()},defaultAction:function(){t.load()}});return n});

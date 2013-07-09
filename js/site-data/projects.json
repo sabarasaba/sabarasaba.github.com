@@ -1,0 +1,25 @@
+[{
+  "name": "Tookie",
+  "description": "<p>Tookie is a meta-search engine that indexes movie torrents from torrentz and presents all the information in a beautiful and responsive UI.</p><p> It was written using Node.JS, Express.js, Mongodb and EJS.</p>",
+  "img": "/img/samples/1.png",
+  "link": "http://wwww.github.com/sabarasaba/tookie"
+},
+{
+  "name": "AriaLinter",
+  "description": "<p>It's a simple accessibility linter for HTML documents and templates. The architecture implements the WCAG 2.0 validation rules. It also provides a Grunt task based on the linter in order to integrate accessibility best practices right into the developer workflow.</p>",
+  "img": "/img/samples/2.png",
+  "link": "https://github.com/globant-ui/arialinter"
+},
+{
+  "name": "HeadScrolling",
+  "description": "<p>It allows you to scroll over the DOM by moving your head. Using the webRTC API from Chrome, it uses your webcam, and tracks the position of your head to determine the speed of the scrolling and the direction.</p>",
+  "img": "/img/samples/3.png",
+  "link": "http://www.youtube.com/watch?v=x5RyA1ISRqs"
+},
+{
+  "name": "Portfolio",
+  "description": "<p>This is the third redesign of my portfolio. For building it I used Backbone.JS, Require.js, Grunt, Bootstrap, HTML5 and CSS3.</p>",
+  "img": "/img/samples/4.png",
+  "link": "https://github.com/sabarasaba/sabarasaba.github.com"
+}
+]

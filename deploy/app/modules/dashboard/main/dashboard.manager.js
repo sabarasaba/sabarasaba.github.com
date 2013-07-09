@@ -1,0 +1,1 @@
+define(["container.view","siutsur"],function(e){var t=e.extend({afterRender:function(){Siutsur.load("354584637009448960",function(e){$(".tweet-message").empty().html(e[0].title.regular)},function(){console.log("error loading tweets.")})}});return t});
