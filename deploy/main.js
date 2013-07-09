@@ -1,4 +1,8 @@
-/*!
+/*
+ 
+ Hey! watcha looking for ? If you wanna take a look at the source code visit https://github.com/sabarasaba/sabarasaba.github.com/tree/master/js
+ 
+ *!
  * JavaScript Debug - v0.4 - 6/22/2010
  * http://benalman.com/projects/javascript-debug-console-log/
  *
