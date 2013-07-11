@@ -2,7 +2,7 @@
   "name": "Tookie",
   "description": "<p>Tookie is a meta-search engine that indexes movie torrents from torrentz and presents all the information in a beautiful and responsive UI.</p><p> It was written using Node.JS, Express.js, Mongodb and EJS.</p>",
   "img": "/img/samples/1.png",
-  "link": "http://wwww.github.com/sabarasaba/tookie"
+  "link": "http://github.com/sabarasaba/tookie"
 },
 {
   "name": "AriaLinter",
