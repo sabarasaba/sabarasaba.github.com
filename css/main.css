@@ -1,0 +1,146 @@
+::selection {
+  background: #00D9D9;
+  color: #FFFFFF;
+}
+
+::-moz-selection {
+  background: #00D9D9;
+  color: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #FFFFFF;
+  color: #A1B2B3;
+  font: 300 38px source-sans-pro, sans-serif;
+  line-height: 1.5em;
+}
+
+article {
+  margin: 25px;
+  padding: 25px;
+  width: 600px;
+  color: #A1B2B3;
+  font: 300 48px source-sans-pro, sans-serif;
+  line-height: 1.5em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+li, ul {
+  list-style: square;
+}
+
+a, a:link, a:visited {
+  outline: none;
+  color: #00D9D9;
+  text-decoration: none;
+
+  -webkit-transition: color 500ms ease-in;
+     -moz-transition: color 500ms ease-in;
+       -o-transition: color 500ms ease-in;
+      -ms-transition: color 500ms ease-in;
+          transition: color 500ms ease-in;
+}
+
+a:hover, a:active {
+  color: #A1B2B3;
+
+  -webkit-transition: color 500ms ease-out;
+     -moz-transition: color 500ms ease-out;
+       -o-transition: color 500ms ease-out;
+      -ms-transition: color 500ms ease-out;
+          transition: color 500ms ease-out;
+}
+
+.blue, a.blue:link, a.blue:visited {
+  color: #00D9D9;
+
+  -webkit-transition: color 500ms ease-in;
+     -moz-transition: color 500ms ease-in;
+       -o-transition: color 500ms ease-in;
+      -ms-transition: color 500ms ease-in;
+          transition: color 500ms ease-in;
+}
+
+a.blue:hover, a.blue:active {
+  color: #A1B2B3;
+
+  -webkit-transition: color 500ms ease-out;
+     -moz-transition: color 500ms ease-out;
+       -o-transition: color 500ms ease-out;
+      -ms-transition: color 500ms ease-out;
+          transition: color 500ms ease-out;
+}
+
+.green, a.green:link, a.green:visited {
+  color: #77CC33;
+
+  -webkit-transition: color 500ms ease-in;
+     -moz-transition: color 500ms ease-in;
+       -o-transition: color 500ms ease-in;
+      -ms-transition: color 500ms ease-in;
+          transition: color 500ms ease-in;
+}
+
+a.green:hover, a.green:active {
+  color: #A1B2B3;
+
+  -webkit-transition: color 500ms ease-out;
+     -moz-transition: color 500ms ease-out;
+       -o-transition: color 500ms ease-out;
+      -ms-transition: color 500ms ease-out;
+          transition: color 500ms ease-out;
+}
+
+.pink, a.pink:link, a.pink:visited {
+  color: #FF0099;
+
+  -webkit-transition: color 500ms ease-in;
+     -moz-transition: color 500ms ease-in;
+       -o-transition: color 500ms ease-in;
+      -ms-transition: color 500ms ease-in;
+          transition: color 500ms ease-in;
+}
+
+a.pink:hover, a.pink:active {
+  color: #A1B2B3;
+
+  -webkit-transition: color 500ms ease-out;
+     -moz-transition: color 500ms ease-out;
+       -o-transition: color 500ms ease-out;
+      -ms-transition: color 500ms ease-out;
+          transition: color 500ms ease-out;
+}
+
+.orange, a.orange:link, a.orange:visited {
+  color: #FFA500;
+
+  -webkit-transition: color 500ms ease-in;
+     -moz-transition: color 500ms ease-in;
+       -o-transition: color 500ms ease-in;
+      -ms-transition: color 500ms ease-in;
+          transition: color 500ms ease-in;
+}
+
+a.orange:hover, a.orange:active {
+  color: #A1B2B3;
+
+  -webkit-transition: color 500ms ease-out;
+     -moz-transition: color 500ms ease-out;
+       -o-transition: color 500ms ease-out;
+      -ms-transition: color 500ms ease-out;
+          transition: color 500ms ease-out;
+}
+
+@media screen and (max-width: 700px) {
+  article {
+    width: auto;
+    font: 300 38px source-sans-pro, sans-serif;
+  }
+}
