@@ -15,35 +15,37 @@ module.exports = function(grunt) {
     csslint: {
       lax: {
         rules: {
-          'box-sizing': false
+          'box-model': false,
+          'outline-none': false
         },
         src: [
-          PATH_ASSETS_CSS + '/*.css'
+          PATH_ASSETS_CSS + '*.css',
+          '!' + PATH_ASSETS_CSS + 'animate.css'
         ]
       }
     },
 
     concat: {
       css: {
-        src: [PATH_ASSETS_CSS + '/*.css'],
+        src: [PATH_ASSETS_CSS + '*.css'],
         dest: PATH_DEPLOY_ASSETS +
-          '/css/<%= pkg.name %>.concat.css'
+          'css/<%= pkg.name %>.concat.css'
       }
     },
 
     cssmin: {
       my_target: {
         src: PATH_DEPLOY_ASSETS +
-          '/css/<%= pkg.name %>.concat.css',
+          'css/<%= pkg.name %>.concat.css',
         dest: PATH_DEPLOY_ASSETS +
-          '/css/<%= pkg.name %>.min.css'
+          'css/<%= pkg.name %>.min.css'
       }
     },
 
     watch: {
       assets: {
         files: [
-          PATH_ASSETS_CSS + '/*.css',
+          PATH_ASSETS_CSS + '*.css',
           'index.html'
         ],
         tasks: ['csslint:lax', 'concat', 'cssmin'],
