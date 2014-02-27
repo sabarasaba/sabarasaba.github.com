@@ -181,7 +181,8 @@ a.red:hover, a.red:active {
 
 @media screen and (max-width: 700px) {
   article {
+    margin: 0;
     width: auto;
-    font: 300 38px source-sans-pro, sans-serif;
+    font: 300 30px source-sans-pro,sans-serif;
   }
 }
