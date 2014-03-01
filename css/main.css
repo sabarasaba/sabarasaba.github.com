@@ -26,14 +26,24 @@ article {
   line-height: 1.5em;
 }
 
+article > .greetings {
+  margin-top: 1em;
+}
+
 img {
   max-width: 100%;
   height: auto;
   border: 0;
 }
 
-li, ul {
-  list-style: square;
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul > li {
+  display: inline-block;
+  list-style: none;
 }
 
 a, a:link, a:visited {
@@ -60,122 +70,50 @@ a:hover, a:active {
 
 .blue, a.blue:link, a.blue:visited {
   color: #00D9D9;
-
-  -webkit-transition: color 500ms ease-in;
-     -moz-transition: color 500ms ease-in;
-       -o-transition: color 500ms ease-in;
-      -ms-transition: color 500ms ease-in;
-          transition: color 500ms ease-in;
 }
 
 a.blue:hover, a.blue:active {
   color: #A1B2B3;
-
-  -webkit-transition: color 500ms ease-out;
-     -moz-transition: color 500ms ease-out;
-       -o-transition: color 500ms ease-out;
-      -ms-transition: color 500ms ease-out;
-          transition: color 500ms ease-out;
 }
 
 .green, a.green:link, a.green:visited {
   color: #77CC33;
-
-  -webkit-transition: color 500ms ease-in;
-     -moz-transition: color 500ms ease-in;
-       -o-transition: color 500ms ease-in;
-      -ms-transition: color 500ms ease-in;
-          transition: color 500ms ease-in;
 }
 
 a.green:hover, a.green:active {
   color: #A1B2B3;
-
-  -webkit-transition: color 500ms ease-out;
-     -moz-transition: color 500ms ease-out;
-       -o-transition: color 500ms ease-out;
-      -ms-transition: color 500ms ease-out;
-          transition: color 500ms ease-out;
 }
 
 .pink, a.pink:link, a.pink:visited {
   color: #FF0099;
-
-  -webkit-transition: color 500ms ease-in;
-     -moz-transition: color 500ms ease-in;
-       -o-transition: color 500ms ease-in;
-      -ms-transition: color 500ms ease-in;
-          transition: color 500ms ease-in;
 }
 
 a.pink:hover, a.pink:active {
   color: #A1B2B3;
-
-  -webkit-transition: color 500ms ease-out;
-     -moz-transition: color 500ms ease-out;
-       -o-transition: color 500ms ease-out;
-      -ms-transition: color 500ms ease-out;
-          transition: color 500ms ease-out;
 }
 
 .orange, a.orange:link, a.orange:visited {
   color: #FFA500;
-
-  -webkit-transition: color 500ms ease-in;
-     -moz-transition: color 500ms ease-in;
-       -o-transition: color 500ms ease-in;
-      -ms-transition: color 500ms ease-in;
-          transition: color 500ms ease-in;
 }
 
 a.orange:hover, a.orange:active {
   color: #A1B2B3;
-
-  -webkit-transition: color 500ms ease-out;
-     -moz-transition: color 500ms ease-out;
-       -o-transition: color 500ms ease-out;
-      -ms-transition: color 500ms ease-out;
-          transition: color 500ms ease-out;
 }
 
 .black, a.black:link, a.black:visited {
   color: #000000;
-
-  -webkit-transition: color 500ms ease-in;
-     -moz-transition: color 500ms ease-in;
-       -o-transition: color 500ms ease-in;
-      -ms-transition: color 500ms ease-in;
-          transition: color 500ms ease-in;
 }
 
 a.black:hover, a.black:active {
   color: #A1B2B3;
-
-  -webkit-transition: color 500ms ease-out;
-     -moz-transition: color 500ms ease-out;
-       -o-transition: color 500ms ease-out;
-      -ms-transition: color 500ms ease-out;
-          transition: color 500ms ease-out;
 }
 
 .red, a.red:link, a.red:visited {
   color: #FD0808;
-
-  -webkit-transition: color 500ms ease-in;
-     -moz-transition: color 500ms ease-in;
-       -o-transition: color 500ms ease-in;
-      -ms-transition: color 500ms ease-in;
-          transition: color 500ms ease-in;
 }
 
 a.red:hover, a.red:active {
   color: #A1B2B3;
-
-  -webkit-transition: color 500ms ease-out;
-     -moz-transition: color 500ms ease-out;
-       -o-transition: color 500ms ease-out;
-      -ms-transition: color 500ms ease-out;
-          transition: color 500ms ease-out;
 }
 
 
