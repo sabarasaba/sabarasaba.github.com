@@ -123,4 +123,8 @@ a.red:hover, a.red:active {
     width: auto;
     font: 300 30px source-sans-pro,sans-serif;
   }
+
+  article > .greetings {
+    margin-bottom: 1em;
+  }
 }
