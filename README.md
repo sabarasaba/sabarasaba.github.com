@@ -1,6 +1,6 @@
-# sabarasaba.github.io
+# [ignaciorivas.me](http://ignaciorivas.me/)
 
-This is my personal portfolio, with a nice presentation for each project I've been involved in.
+This is my personal portfolio.
 
 ## License
 
