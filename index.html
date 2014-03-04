@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <article class="animated bounceIn">
+    <article class="animated">
       <div class="greetings">
         Hello, my name is Ignacio. Recenty moved from Buenos Aires to <strong>London</strong>. I'm currently working as a Front-End Engineer at Lokku.
       </div>
@@ -25,6 +25,10 @@
     </article>
 
     <script type="text/javascript">
+      var $article = document.querySelector('article');
+      $article.className += ' bounceIn';
+      $article.style.display = 'inline-block';
+
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-32825709-1']);
       _gaq.push(['_setDomainName', 'ignaciorivas.me']);

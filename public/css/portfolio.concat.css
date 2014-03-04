@@ -2828,6 +2828,8 @@ body {
 }
 
 article {
+  display: none;
+
   margin: 25px;
   padding: 25px;
   width: 600px;
