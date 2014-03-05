@@ -4,9 +4,6 @@ module.exports = function(grunt) {
   var PATH_ASSETS_CSS = 'css/';
   var PATH_DEPLOY_ASSETS = 'public/';
 
-  // ==========================================================================
-  // Project configuration
-  // ==========================================================================
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
