@@ -66,6 +66,10 @@
   </main>
 
   <script type="text/javascript">
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-32825709-1']);
     _gaq.push(['_setDomainName', 'ignaciorivas.me']);
