@@ -1,44 +1,83 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ignacio Rivas</title>
+  <meta content="Full-Stack software engineer based in Amsterdam" name="description">
 
-    <title>Ignacio Rivas</title>
-
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="/public/css/portfolio.min.css">
-    <script src="https://use.edgefonts.net/source-sans-pro:n3.js"></script>
-  </head>
-
-  <body>
-    <article class="animated">
-      <div class="greetings">
-        Hello, my name is Ignacio. Recenty moved from Buenos Aires to <strong>London</strong>. I'm currently working as a Front-End Engineer at Osper.
-      </div>
+  <link rel="icon" href="favicon.ico">
+  <link href="/css/styles.css" media="screen" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <main>
+    <section>
+      <h1 class="big name"><a href="/">@Ignacio Rivas</a></h1>
+      <p class="time" id="time">Sun, Feb 19, 6:06pm</p>
+    </section>
+    <section>
+      <p class="sign">@@@@@@@@@@@@@@@@@@@@@@@@@</p>
+      <h2 class="big">Hello.</h2>
+      <p>My name is Ignacio Rivas.<br>
+      I'm a <b>Full-Stack software engineer</b>.</p>
+      <p>I love shipping products</p>
+      <p>I'm passionate about the <b>open web and javascript</b>, I love working on challenging problems and shipping products to users.</p>
+      <p>I like my code clean, tested and well designed.</p>
+    </section>
+    <section>
+      <p class="sign">@@@@@@@@@@@@@@@@@@@@@@@@@</p>
+      <h2 class="big">Latest work.</h2>
       <ul>
-        <li><a href="https://github.com/sabarasaba" class="black" target="_blank">Github</a></li>
-        <li><a href="http://twitter.com/sabarasaba" class="blue" target="_blank">Twitter</a></li>
-        <li><a href="http://www.last.fm/user/IARivas" class="red" target="_blank">LastFM</a></li>
-        <li><a href="mailto:rivasign@gmail.com" class="orange">Gmail</a></li>
+        <li>
+          <span class="star">*</span> Currently working on a new product idea, more soon;
+        </li>
+        <li>
+          <span class="star">*</span> A startup I co-founded: <a target="_blank" href="https://learnlithuanian.online">Learn Lithuanian</a>, a mobile app for learning Lithuanian;
+        </li>
       </ul>
-    </article>
+    </section>
+    <section>
+      <p class="sign">@@@@@@@@@@@@@@@@@@@@@@@@@</p>
+      <h2 class="big">Experience.</h2>
+      <ul>
+        <li><span class="star">*</span> (Jan 2017-Present) <b>Full-Stack Engineer</b> @Deskbookers, Amsterdam</li>
+        <li><span class="star">*</span> (Aug 2016) <b>Full-Stack Engineer</b> @mycujoo, Amsterdam</li>
+        <li><span class="star">*</span> (Apr 2015) <b>Front-End Engineer</b> @Osper, London</li>
+        <li><span class="star">*</span> (May 2014) <b>Front-End Engineer</b> @Lokku, London</li>
+        <li><span class="star">*</span> (Dec 2012) <b>Front-End Engineer</b> @Globant, Buenos Aires</li>
+      </ul>
+    </section>
+    <section>
+      <p class="sign">@@@@@@@@@@@@@@@@@@@@@@@@@</p>
+      <h2 class="big">Usually thinking about..</h2>
+      <ul>
+        <li><span class="star">*</span> <b>Javascript</b> React/Redux, Ember, SSR, Service Workers</li>
+        <li><span class="star">*</span> <b>Node.js</b>, express, koa, sequelize, knex</li>
+        <li><span class="star">*</span> <b>Software Design</b> microservices, databases, ops</li>
+        <li><span class="star">*</span> <b>UI/UX</b> Interface Design for mobile and web</li>
+        <li><span class="star">*</span> <b>Mechanical Keyboards</b> brown switches + PBT double shot keycaps <3</li>
+        <li><span class="star">*</span> <b>Headphones</b> DT-770, A1 DAC and Shure SE-215</li>
+      </ul>
+    </section>
+    <section>
+      <p class="sign">@@@@@@@@@@@@@@@@@@@@@@@@@</p>
+      <h2 class="big">Get in touch.</h2>
+      <p>Say hi @ <b><a href="mailto:rivasign@gmail.com">rivasign@gmail.com</a></b>.</p>
+    </section>
+  </main>
 
-    <script type="text/javascript">
-      var $article = document.querySelector('article');
-      $article.className += ' bounceIn';
-      $article.style.display = 'inline-block';
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-32825709-1']);
+    _gaq.push(['_setDomainName', 'ignaciorivas.me']);
+    _gaq.push(['_trackPageview']);
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-32825709-1']);
-      _gaq.push(['_setDomainName', 'ignaciorivas.me']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-  </body>
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</body>
 </html>
+
