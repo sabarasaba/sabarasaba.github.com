@@ -5,6 +5,8 @@ IDE's files -----------------------------------------
 Session.vim
 .netrwhist
 
+npm-debug.log
+
 # sublimetext
 /*.sublime-project
 *.sublime-workspace
