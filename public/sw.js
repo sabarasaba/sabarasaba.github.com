@@ -1,75 +1,165 @@
-/*
- Copyright 2016 Google Inc. All Rights Reserved.
- Licensed under the Apache License, Version 2.0 (the "License");
- you may not use this file except in compliance with the License.
- You may obtain a copy of the License at
-     http://www.apache.org/licenses/LICENSE-2.0
- Unless required by applicable law or agreed to in writing, software
- distributed under the License is distributed on an "AS IS" BASIS,
- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- See the License for the specific language governing permissions and
- limitations under the License.
-*/
+/**
+ * Welcome to your Workbox-powered service worker!
+ *
+ * You'll need to register this file in your web app and you should
+ * disable HTTP caching for this file too.
+ * See https://goo.gl/nhQhGp
+ *
+ * The rest of the code is auto-generated. Please don't update this file
+ * directly; instead, make changes to your Workbox build configuration
+ * and re-run your build process.
+ * See https://goo.gl/2aRDsh
+ */
 
-// Names of the two caches used in this version of the service worker.
-// Change to v2, etc. when you update any of the local resources, which will
-// in turn trigger the install event again.
-const PRECACHE = 'precache-v9';
-const RUNTIME = 'runtime';
+importScripts("workbox-v3.6.3/workbox-sw.js");
+workbox.setConfig({modulePathPrefix: "workbox-v3.6.3"});
 
-// A list of local resources we always want to be cached.
-const PRECACHE_URLS = [
-  'index.html',
-  './', // Alias for index.html
-  'css/styles.css',
-  'favicon.ico'
-];
+workbox.core.setCacheNameDetails({prefix: "gatsby-plugin-offline"});
 
-// The install handler takes care of precaching the resources we always need.
-self.addEventListener('install', event => {
-  event.waitUntil(
-    caches.open(PRECACHE)
-      .then(cache => cache.addAll(PRECACHE_URLS))
-      .then(self.skipWaiting())
-  );
-});
+workbox.skipWaiting();
+workbox.clientsClaim();
 
-// The activate handler takes care of cleaning up old caches.
-self.addEventListener('activate', event => {
-  const currentCaches = [PRECACHE, RUNTIME];
-  event.waitUntil(
-    caches.keys().then(cacheNames => {
-      return cacheNames.filter(cacheName => !currentCaches.includes(cacheName));
-    }).then(cachesToDelete => {
-      return Promise.all(cachesToDelete.map(cacheToDelete => {
-        return caches.delete(cacheToDelete);
-      }));
-    }).then(() => self.clients.claim())
-  );
-});
+/**
+ * The workboxSW.precacheAndRoute() method efficiently caches and responds to
+ * requests for URLs in the manifest.
+ * See https://goo.gl/S9QRab
+ */
+self.__precacheManifest = [
+  {
+    "url": "webpack-runtime-adb81cc5a40531b1a3fd.js"
+  },
+  {
+    "url": "app.a166a5cf3cb97484e023.css"
+  },
+  {
+    "url": "app-53402ca10f12c2053d2e.js"
+  },
+  {
+    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-ec2d2698dbb19486a1ce.js"
+  },
+  {
+    "url": "offline-plugin-app-shell-fallback/index.html",
+    "revision": "7d689808aec45acf1ad2af7068faa7f4"
+  },
+  {
+    "url": "component---src-pages-404-js-927c11d168ddb51c13bf.js"
+  },
+  {
+    "url": "0-8286bfe04e65e540b975.js"
+  },
+  {
+    "url": "static/d/676/path---404-html-516-62a-Q6suNzTXVVaBTmEmRI7mE65R2M4.json"
+  },
+  {
+    "url": "static/d/520/path---offline-plugin-app-shell-fallback-a-30-c5a-NZuapzHg3X9TaN1iIixfv1W23E.json"
+  },
+  {
+    "url": "manifest.webmanifest",
+    "revision": "f7bc7ec31f3a7e806ffe257f44c2e92a"
+  }
+].concat(self.__precacheManifest || []);
+workbox.precaching.suppressWarnings();
+workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-// The fetch handler serves responses for same-origin resources from a cache.
-// If no response is found, it populates the runtime cache with the response
-// from the network before returning it to the page.
-self.addEventListener('fetch', event => {
-  // Skip cross-origin requests, like those for Google Analytics.
-  if (event.request.url.startsWith(self.location.origin)) {
-    event.respondWith(
-      caches.match(event.request).then(cachedResponse => {
-        if (cachedResponse) {
-          return cachedResponse;
+workbox.routing.registerRoute(/(\.js$|\.css$|static\/)/, workbox.strategies.cacheFirst(), 'GET');
+workbox.routing.registerRoute(/^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/, workbox.strategies.staleWhileRevalidate(), 'GET');
+workbox.routing.registerRoute(/^https?:\/\/fonts\.googleapis\.com\/css/, workbox.strategies.staleWhileRevalidate(), 'GET');
+
+/* global importScripts, workbox, idbKeyval */
+
+importScripts(`idb-keyval-iife.min.js`)
+const WHITELIST_KEY = `custom-navigation-whitelist`
+
+const navigationRoute = new workbox.routing.NavigationRoute(({ event }) => {
+  const { pathname } = new URL(event.request.url)
+
+  return idbKeyval.get(WHITELIST_KEY).then((customWhitelist = []) => {
+    // Respond with the offline shell if we match the custom whitelist
+    if (customWhitelist.includes(pathname)) {
+      const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
+      const cacheName = workbox.core.cacheNames.precache
+
+      return caches.match(offlineShell, { cacheName }).then(cachedResponse => {
+        if (!cachedResponse) {
+          return fetch(offlineShell).then(response => {
+            if (response.ok) {
+              return caches.open(cacheName).then(cache =>
+                // Clone is needed because put() consumes the response body.
+                cache.put(offlineShell, response.clone()).then(() => response)
+              )
+            } else {
+              return fetch(event.request)
+            }
+          })
         }
 
-        return caches.open(RUNTIME).then(cache => {
-          return fetch(event.request).then(response => {
-            // Put a copy of the response in the runtime cache.
-            return cache.put(event.request, response.clone()).then(() => {
-              return response;
-            });
-          });
-        });
+        return cachedResponse
       })
-    );
-  }
-});
+    }
 
+    return fetch(event.request)
+  })
+})
+
+workbox.routing.registerRoute(navigationRoute)
+
+let updatingWhitelist = null
+
+function rawWhitelistPathnames(pathnames) {
+  if (updatingWhitelist !== null) {
+    // Prevent the whitelist from being updated twice at the same time
+    return updatingWhitelist.then(() => rawWhitelistPathnames(pathnames))
+  }
+
+  updatingWhitelist = idbKeyval
+    .get(WHITELIST_KEY)
+    .then((customWhitelist = []) => {
+      pathnames.forEach(pathname => {
+        if (!customWhitelist.includes(pathname)) customWhitelist.push(pathname)
+      })
+
+      return idbKeyval.set(WHITELIST_KEY, customWhitelist)
+    })
+    .then(() => {
+      updatingWhitelist = null
+    })
+
+  return updatingWhitelist
+}
+
+function rawResetWhitelist() {
+  if (updatingWhitelist !== null) {
+    return updatingWhitelist.then(() => rawResetWhitelist())
+  }
+
+  updatingWhitelist = idbKeyval.set(WHITELIST_KEY, []).then(() => {
+    updatingWhitelist = null
+  })
+
+  return updatingWhitelist
+}
+
+const messageApi = {
+  whitelistPathnames(event) {
+    let { pathnames } = event.data
+
+    pathnames = pathnames.map(({ pathname, includesPrefix }) => {
+      if (!includesPrefix) {
+        return `${pathname}`
+      } else {
+        return pathname
+      }
+    })
+
+    event.waitUntil(rawWhitelistPathnames(pathnames))
+  },
+
+  resetWhitelist(event) {
+    event.waitUntil(rawResetWhitelist())
+  },
+}
+
+self.addEventListener(`message`, event => {
+  const { gatsbyApi } = event.data
+  if (gatsbyApi) messageApi[gatsbyApi](event)
+})

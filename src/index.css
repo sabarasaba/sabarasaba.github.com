@@ -3,33 +3,33 @@
     font-style: normal;
     font-weight: 700;
     src: local('InputSans-Bold'),
-    url("../fonts/InputSans-Bold.eot?#") format("embedded-opentype"),
-    url("../fonts/InputSans-Bold.woff") format("woff"),
-    url("../fonts/InputSans-Bold.ttf") format("opentype"),
-    url("../fonts/InputSans-Bold.svg#web") format("svg");
+    url("./fonts/InputSans-Bold.eot?#") format("embedded-opentype"),
+    url("./fonts/InputSans-Bold.woff") format("woff"),
+    url("./fonts/InputSans-Bold.ttf") format("opentype"),
+    url("./fonts/InputSans-Bold.svg#web") format("svg");
 }
 @font-face {
     font-family: "Input Sans";
     font-style: normal;
     font-weight: 400;
     src: local('InputSans-Regular'),
-    url("../fonts/InputSans-Regular.eot?#") format("embedded-opentype"), 
-    url("../fonts/InputSans-Regular.woff") format("woff"), 
-    url("../fonts/InputSans-Regular.ttf") format("opentype"), 
-    url("../fonts/InputSans-Regular.svg#web") format("svg");
+    url("./fonts/InputSans-Regular.eot?#") format("embedded-opentype"),
+    url("./fonts/InputSans-Regular.woff") format("woff"),
+    url("./fonts/InputSans-Regular.ttf") format("opentype"),
+    url("./fonts/InputSans-Regular.svg#web") format("svg");
 }
 @font-face {
     font-family: "Input Sans";
     font-style: normal;
     font-weight: 500;
     src: local('InputSans-Medium'),
-    url("../fonts/InputSans-Medium.eot?#") format("embedded-opentype"), 
-    url("../fonts/InputSans-Medium.woff") format("woff"), 
-    url("../fonts/InputSans-Medium.ttf") format("opentype"), 
-    url("../fonts/InputSans-Medium.svg#web") format("svg");
+    url("./fonts/InputSans-Medium.eot?#") format("embedded-opentype"),
+    url("./fonts/InputSans-Medium.woff") format("woff"),
+    url("./fonts/InputSans-Medium.ttf") format("opentype"),
+    url("./fonts/InputSans-Medium.svg#web") format("svg");
 }
 
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/*! Normalize browsers defaults */
 
 /**
  * 1. Set default font family to sans-serif.
@@ -49,10 +49,6 @@ html {
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
-
-/**
- * Remove default margin.
- */
 
 body {
   margin: 0;
@@ -162,7 +158,6 @@ main {
 
 main .sign {
   font-size: 13px;
-  //font-weight: 500;
   letter-spacing: 1px;
   white-space: nowrap;
   overflow: hidden;
@@ -227,6 +222,18 @@ main .star {
   color: red;
 }
 
+main article {
+  padding-left: 50px;
+}
+
+main article h1 {
+  font-size: 40px;
+  color: #222;
+  word-wrap: break-word;
+  font-weight: 500;
+  margin-top: 50px;
+}
+
 .time {
   top: 35px;
   right: 80px;
@@ -238,8 +245,7 @@ main .star {
   font-weight: 500;
 }
 
-@media only screen 
-and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   main {
     margin: 10px 20px 15px;
     padding: 15px 0;
