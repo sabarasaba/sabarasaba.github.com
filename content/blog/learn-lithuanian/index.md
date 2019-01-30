@@ -12,6 +12,8 @@ behind a word the ending of the following word needs to change accordingly. Also
 other rules for different endings and scenarios and verbs.. and you see how this is getting
 hard to grasp already.
 
+![Shot](./shot.png)
+
 I did a bit of research into other platforms that provide what I was after but had
 little to no success.  My aim was to find something like Duolingo, but tailored to
 Lithuanian. Sadly they still don't have any courses for this language and seems like
@@ -34,9 +36,14 @@ of Lithuanian decendants living in the US that have kids or couples in which one
 wants to learn the language of the other (such as myself).
 
 I found a few facebook groups of lithuanians living in the US, another one of Lithuanians
-living in the UK, a few reddit groups here and there and a bunch of Duoling forum posts
+living in the UK, a few subreddits and a bunch of Duoling forum posts
 of people asking when they were going to add Lithuanian to their app. Upon the timespan of
 a month I got about 850+ signups and a bunch of messages and emails from people really
 looking forward to the launch.
 
-But given
+![Landing Page](./signups.png)
+
+![Analytics](./analytics.png)
+
+But given the amount of work required to create the app and the content compared to how
+many people signed up I thought it wasn't worthy to spend all that time building the product.

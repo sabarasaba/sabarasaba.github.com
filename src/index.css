@@ -218,6 +218,11 @@ main b {
   font-weight: 700;
 }
 
+main small.date {
+  margin-bottom: 30px;
+  display: block;
+}
+
 main .star {
   color: red;
 }
@@ -234,6 +239,11 @@ main article h1 {
   margin-top: 50px;
 }
 
+main article ul {
+  padding: 0 2em;
+  list-style: initial;
+}
+
 .time {
   top: 35px;
   right: 80px;
@@ -243,6 +253,14 @@ main article h1 {
   margin-top: 10px;
   display: inline-block;
   font-weight: 500;
+}
+
+.gatsby-resp-image-link {
+  background: none;
+}
+
+.gatsby-resp-image-link:hover {
+  background: none;
 }
 
 @media only screen and (max-width: 480px) {
