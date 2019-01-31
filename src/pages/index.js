@@ -17,10 +17,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title="Hola"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
-        />
+        <SEO keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
         <Header />
         <WorkList posts={posts} />
         <Experience />
