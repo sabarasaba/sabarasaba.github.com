@@ -4,11 +4,24 @@ date: '2018-01-02T00:00:00.121Z'
 description: ', building administration platform;'
 ---
 
-Wow! I love blogging so much already.
+Edificios is a project that started in September 2018 and it's currently under **heavy development**, it
+aims to be a platform for managing everything related with a residential building. It has support
+for all the roles that people and companies have over a building:
 
-Did you know that "despite its name, salted duck eggs can also be made from
-chicken eggs, though the taste and texture will be somewhat different, and the
-egg yolk will be less rich."?
-([Wikipedia Link](http://en.wikipedia.org/wiki/Salted_duck_egg))
+* Administrators: who deal with expenses, payouts to third-party's and legal stuff.
+* Managers: People in charge of the maintenance building, arranging and scheduling repairs with third-party's and dealing with residents requests.
+* Owners: People who own apartments in the complex.
+* Tenants: Who actually live in the apartments.
 
-Yeah, I didn't either.
+![Shot](./shot.png)
+
+The platform allows users to:
+
+* Submit tickets or requests to the managers/administrators. e.g: elevator not working, light bulb not working, etc.
+* Calendar of events or booked shared spaces.
+* Expenses due for each apartment.
+* Parking spot management.
+* Messaging: Message with your neighbours.
+* Notifications.
+
+
