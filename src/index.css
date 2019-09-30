@@ -244,6 +244,11 @@ main article ul {
   list-style: initial;
 }
 
+main article p > img {
+  display: block;
+  margin: 0 auto;
+}
+
 .time {
   top: 35px;
   right: 80px;
