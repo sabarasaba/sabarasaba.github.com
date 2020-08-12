@@ -27,13 +27,13 @@ Once I had a bunch of components nailed down I started quickly prototyping the v
 ## Other libraries I used
 
 * React 16.8 with hooks pretty much everywhere
-* Also used react-router, redux, and redux-starterkit: This allowed me to quickly prototype the whole data flow and state management for the app really quickly since it was the techs I'm most used to use.
+* Also used react-router, redux, and redux-toolkit: This allowed me to quickly prototype the whole data flow and state management for the app really quickly since it was the techs I'm most used to use.
 * I wrote a little API wrapper for dealing with their Laravel API using axios.
 * Prettier + eslint for code linting and formatting.
 * Used date.fns for date handling
 * Used formik for form state handling
 * SASS with CSS Modules for styling everything
 * All icons were react-feather
-* Animations with react-pose
+* Animations with framer-motion
 * recompose for little util HOC's
 * Testing: unit tests with Jest and integration tests with cypress
